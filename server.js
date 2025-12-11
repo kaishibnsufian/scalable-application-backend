@@ -15,7 +15,7 @@ const PORT = process.env.PORT || 8080;
 const CORS_ORIGIN = process.env.CORS_ORIGIN || "*";
 
 const AZURE_STORAGE_CONNECTION_STRING = process.env.AZURE_STORAGE_CONNECTION_STRING;
-const BLOB_CONTAINER_NAME = process.env.BLOB_CONTAINER_NAME || "videos";
+const BLOB_CONTAINER_NAME = process.env.BLOB_CONTAINER_NAME || "videocontainer";
 
 const COSMOS_ENDPOINT = process.env.COSMOS_ENDPOINT;
 const COSMOS_KEY = process.env.COSMOS_KEY;
@@ -254,3 +254,4 @@ ensureResources()
         console.error("Startup failed:", e);
         process.exit(1);
     });
+
